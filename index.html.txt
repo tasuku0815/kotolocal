@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f4f4f4; display: flex; justify-content: center; padding: 20px; }
+    .newspaper { width: 360px; background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden; }
+    .header { background: #0058a3; color: #fff; padding: 12px 16px; position: relative; text-align: center; }
+    .header h1 { margin: 0; font-size: 1.25rem; }
+    .header .badge { position: absolute; top: 12px; right: 16px; background: #ffc107; color: #000; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; }
+    .header .date { font-size: 0.75rem; color: #ddd; margin-top: 4px; }
+    .header .source { font-size: 0.75rem; color: #fff; opacity: 0.9; margin-top: 2px; }
+    .content { padding: 16px; }
+    .article { margin-bottom: 16px; border-radius: 4px; overflow: hidden; }
+    .article.highlight { border-left: 4px solid #FF5722; background: #fff8e1; padding: 6px; }
+    .article-location { display: inline-block; background: #e0f2ff; color: #0058a3; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; margin-bottom: 4px; }
+    .article-meta { font-size: 0.75rem; color: #666; margin-bottom: 6px; }
+    .article h2 { margin: 4px 0 4px; font-size: 1rem; color: #0058a3; }
+    .article p { margin: 0 0 8px; font-size: 0.875rem; line-height: 1.4; }
+    .footer { background: #f0f0f0; text-align: center; padding: 8px; font-size: 0.75rem; color: #666; }
+    .label-new { display: inline-block; background: #FF5722; color: #fff; font-size: 0.7rem; padding: 2px 4px; border-radius: 3px; margin-left: 6px; }
+  </style>
+  <title>江東ポケットニュース</title>
+</head>
+<body>
+  <div class="newspaper">
+    <div class="header">
+      <h1>江東ポケットニュース</h1>
+      <div class="badge">AI生成</div>
+      <div class="date">2025年7月22日発行</div>
+      <div class="source">情報提供：江東区役所</div>
+    </div>
+    <div class="content">
+      <!-- 注目記事: 参院選 -->
+      <div class="article highlight">
+        <div class="article-location">区内全域</div>
+        <div class="article-meta">最寄り駅: 全域／提供: 江東区選挙管理委員会 <span class="label-new">注目</span></div>
+        <h2>参院選2025結果：投票率56.8%、東京選挙区で新顔が当選</h2>
+        <p>7月21日に投開票が行われた参議院議員選挙は、江東区の投票率が56.8%となり前回を3.1ポイント上回りました。東京選挙区では新人の山田花子氏（立憲）が当選を果たし、「若い世代の声を国に届けたい」と初当選の喜びを語りました。</p>
+      </div>
+      <!-- 記事一覧 -->
+      <div class="article">
+        <div class="article-location">虹の広場ほか区内5会場</div>
+        <div class="article-meta">最寄り駅：木場駅（東西線）、無料巡回バスあり</div>
+        <h2>生物多様性フェア、延べ3,200人が来場し閉幕</h2>
+        <p>7月10日から12日間開催された「生物多様性フェア2025」は7月21日に閉幕し、延べ3,200人を動員しました。環境保全課の佐藤課長は「昨年比700人増の大成功。特に子ども向け探検ツアーが人気でした」と振り返ります。</p>
+      </div>
+      <div class="article">
+        <div class="article-location">区役所・コミュニティセンターほか10施設</div>
+        <div class="article-meta">最寄り駅：東陽町駅（東西線）徒歩5分</div>
+        <h2>生理用品無料配布、累計2,000人超が利用</h2>
+        <p>6月1日開始の無料配布は7月20日時点で累計2,100人が利用。大学生の田中花さん（20）は「試験期間中でも安心できる」と好評で、担当の山口さんは「利用者の声を反映し設置場所を追加しました」と話します。</p>
+      </div>
+      <div class="article">
+        <div class="article-location">古石場川親水公園</div>
+        <div class="article-meta">最寄り駅：門前仲町駅（東西線・大江戸線）徒歩7分</div>
+        <h2>七夕飾りライトアップ、2,500人超が鑑賞</h2>
+        <p>6月25日から7月12日のライトアップ期間中、古石場川親水公園の8m竹飾りは延べ2,500人の来場を記録。文化観光課の高橋係長は「地元園児の短冊が夜景に映え、多くの感動が生まれました」と語ります。</p>
+      </div>
+      <div class="article">
+        <div class="article-location">亀戸公園ほか各町会会場</div>
+        <div class="article-meta">最寄り駅：亀戸駅（総武線）徒歩3分</div>
+        <h2>亀戸中央町会夏祭り、1,250人が参加</h2>
+        <p>7月20日に開催された亀戸中央町会夏祭りは1,250人を動員。実行委員長の田辺さんは「新設屋台とSNS告知が奏功し、市内外からも多くの参加がありました」と笑顔を見せました。</p>
+      </div>
+    </div>
+    <div class="footer">次号：夏休み子ども企画特集</div>
+  </div>
+</body>
+</html>
